@@ -81,7 +81,7 @@ body {
   padding-bottom: 0;
 }
 #phone div {
-  color: #557c3e;
+  color: blue;
   text-align: right;
   padding-right: 15px;
 }
@@ -185,6 +185,7 @@ body {
     font-size: 0.7em;
   }
  }
+
 @media (max-width: 767px) {
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
@@ -211,7 +212,9 @@ body {
     font-size: .7em;
     letter-spacing: .1em;
     text-transform: uppercase;
+    color: blue;
   }
+
   .container .jumbotron {
     margin-top: 30px;
     padding-bottom: 0px;
