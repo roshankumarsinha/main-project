@@ -46,6 +46,11 @@ var xfnv25 = 0;
 var xfnv26 = 0;
 var xfnv27 = 0;
 var xfnv28 = 0;
+var xfnv29 = 0;
+var xfnv30 = 0;
+var xfnv31 = 0;
+var xfnv32 = 0;
+
 
 var cost1 = 0;
 var cost2 = 0;
@@ -54,6 +59,8 @@ var cost4 = 0;
 var cost5 = 0;
 var cost6 = 0;
 var cost7 = 0;
+var cost8 = 0;
+
 $("span.tb1").text(" "+xfnv1+" ");
 $("span.tb2").text(" "+xhnv1+" ");
 $("span.tb3").text(" "+xfnv2+" ");
@@ -102,6 +109,11 @@ $("span.tb45").text(" "+xfnv25+" ");
 $("span.tb46").text(" "+xfnv26+" ");
 $("span.tb47").text(" "+xfnv27+" ");
 $("span.tb48").text(" "+xfnv28+" ");
+$("span.tb49").text(" "+xfnv29+" ");
+$("span.tb50").text(" "+xfnv30+" ");
+$("span.tb51").text(" "+xfnv31+" ");
+$("span.tb52").text(" "+xfnv32+" ");
+
 
 
 $(".menu-item-details1 button").click(function () {
@@ -787,6 +799,70 @@ cost7 = (xfnv25*parseInt($(".cost45").html()))
 	 alert(cost7);
 });
 
+$(".menu-item-details8 button").click(function () {
+//***********************
+	if($(this).attr("class")=="97") {
+	    xfnv29 = xfnv29 + 1;
+	    $("span.tb49").text(" "+xfnv29+" ");
+	}
+	else if($(this).attr("class")=="98") {
+	    xfnv29 = xfnv29 - 1;
+	    if(xfnv29<0) {
+	        xfnv29 = 0;
+	    }
+	    $("span.tb49").text(" "+xfnv29+" ");
+	}
+//End of 1st south-indian	
+
+//***********************
+	if($(this).attr("class")=="99") {
+	    xfnv30 = xfnv30 + 1;
+	    $("span.tb50").text(" "+xfnv30+" ");
+	}
+	else if($(this).attr("class")=="100") {
+	    xfnv30 = xfnv30 - 1;
+	    if(xfnv30<0) {
+	        xfnv30 = 0;
+	    }
+	    $("span.tb50").text(" "+xfnv30+" ");
+	}
+//End of 2nd south-indian
+
+//***********************
+	if($(this).attr("class")=="101") {
+	    xfnv31 = xfnv31 + 1;
+	    $("span.tb51").text(" "+xfnv31+" ");
+	}
+	else if($(this).attr("class")=="102") {
+	    xfnv31 = xfnv31 - 1;
+	    if(xfnv31<0) {
+	        xfnv31 = 0;
+	    }
+	    $("span.tb51").text(" "+xfnv31+" ");
+	}
+//End of 3rd south-indian
+
+//***********************
+	if($(this).attr("class")=="103") {
+	    xfnv32 = xfnv32 + 1;
+	    $("span.tb52").text(" "+xfnv32+" ");
+	}
+	else if($(this).attr("class")=="104") {
+	    xfnv32 = xfnv32 - 1;
+	    if(xfnv32<0) {
+	        xfnv32 = 0;
+	    }
+	    $("span.tb52").text(" "+xfnv32+" ");
+	}
+//End of 4th south-indian
+
+cost8 = (xfnv29*parseInt($(".cost49").html()))
+	 + (xfnv30*parseInt($(".cost50").html()))
+	 + (xfnv31*parseInt($(".cost51").html()))
+	 + (xfnv32*parseInt($(".cost52").html()))
+	 ;
+	 alert(cost8);
+});
 
 var cost = 0;
-cost = cost1 + cost2 + cost3 + cost4 + cost5 + cost6 + cost7;
+cost = cost1 + cost2 + cost3 + cost4 + cost5 + cost6 + cost7 + cost8;
